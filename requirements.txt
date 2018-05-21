@@ -4,3 +4,4 @@ tweepy==3.6.0
 matplotlib==2.2.2
 seaborn==0.8.1
 textblob==0.15.1
+flake8==3.5.0
