@@ -29,12 +29,6 @@ extractor = twitter_setup()
 tweets = extractor.user_timeline(screen_name="realDonaldTrump", count=200)
 print("Number of tweets extracted: {}.\n".format(len(tweets)))
 
-# We print the most recent 5 tweets:
-print("5 recent tweets:\n")
-for tweet in tweets[:5]:
-    print(tweet.text)
-    print()
-
 # Pandas Dataframe
 data = pd.DataFrame(data=[tweet.text for tweet in tweets], columns = ['Tweets'])
 data['len']  = np.array([len(tweet.text) for tweet in tweets])
