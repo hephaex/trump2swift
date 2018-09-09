@@ -24,7 +24,7 @@ def twitter_setup():
     return api
 
 extractor = twitter_setup()
-
+ 
 # We create a tweet list as follows:
 tweets = extractor.user_timeline(screen_name="realDonaldTrump", count=200)
 print("Number of tweets extracted: {}.\n".format(len(tweets)))
